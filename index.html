@@ -6,83 +6,86 @@
     <title>Зураб Тот Самый</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-light">
-    <header class="header">
-        <h1 class="header__title">Зураб Тот Самый</h1>
-        <h2 class="header__subtitle">Web-разработчик</h2>
-        <button class="header__theme-toggle" id="theme-toggle">Сменить тему</button>
-        <nav class="header__nav">
+<body class="theme-light font-arial">
+    <header class="header header--shadow">
+        <div class="header__profile">
+            <h1 class="header__title header__title--large">Зураб Тот Самый</h1>
+            <img src="./i.webp" alt="" class="header__image header__image--rounded">
+        </div>
+        <h2 class="header__subtitle header__subtitle--highlight">Web-разработчик</h2>
+        <button class="header__theme-toggle header__theme-toggle--primary" id="theme-toggle">Сменить тему</button>
+        <nav class="header__nav header__nav--centered">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#profile" class="nav__link">Профиль</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Образование</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
-                <li class="nav__item"><a href="#experience" class="nav__link">Опыт</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Навыки</a></li>
+                <li class="nav__item nav__item--spaced"><a href="#profile" class="nav__link nav__link--bold">Профиль</a></li>
+                <li class="nav__item nav__item--spaced"><a href="#education" class="nav__link nav__link--bold">Образование</a></li>
+                <li class="nav__item nav__item--spaced"><a href="#contact" class="nav__link nav__link--bold">Контакты</a></li>
+                <li class="nav__item nav__item--spaced"><a href="#experience" class="nav__link nav__link--bold">Опыт</a></li>
+                <li class="nav__item nav__item--spaced"><a href="#skills" class="nav__link nav__link--bold">Навыки</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="profile" class="profile block">
-        <h3 class="block__title">Профиль</h3>
+    <section id="profile" class="profile block block--padded">
+        <h3 class="block__title block__title--underline">Профиль</h3>
         <div class="block__content">
-            <p class="block__text">Я учусь в IT колледже ItHub. Могу сделать лендинги, а также многостраничные сайты с функционалом. Владею такими фреймворками, как Vue и React.</p>
+            <p class="block__text block__text--italic">Я учусь в IT колледже ItHub. Могу сделать лендинги, а также многостраничные сайты с функционалом. Владею такими фреймворками, как Vue и React.</p>
         </div>
     </section>
 
-    <section id="education" class="education block">
-        <h3 class="block__title">Образование</h3>
+    <section id="education" class="education block block--padded">
+        <h3 class="block__title block__title--underline">Образование</h3>
         <div class="block__content">
-            <div class="education__item">
-                <p class="education__period">2023 - 2026</p>
-                <p class="education__degree">WEB</p>
-                <p class="education__university">ItHub</p>
+            <div class="education__item education__item--highlighted">
+                <p class="education__period education__period--bold">2023 - 2026</p>
+                <p class="education__degree education__degree--uppercase">WEB</p>
+                <p class="education__university education__university--italic">ItHub</p>
             </div>
-            <div class="education__item">
-                <p class="education__period">2021 - 2024</p>
-                <p class="education__degree">Юрист</p>
-                <p class="education__university">Гуманитарный колледж</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact block">
-        <h3 class="block__title">Контакты</h3>
-        <div class="block__content">
-            <p class="contact__info">Телефон: +79225663407</p>
-            <p class="contact__info">Email: Email@gmail.com</p>
-            <p class="contact__info">Адрес: Ингушетия, Магас</p>
-        </div>
-    </section>
-
-    <section id="experience" class="experience block">
-        <h3 class="block__title">Опыт работы</h3>
-        <div class="block__content">
-            <div class="experience__item">
-                <p class="experience__period">2025 - Настоящее время</p>
-                <p class="experience__company">Яндекс</p>
-                <p class="experience__position">Старший web-разработчик</p>
-            </div>
-            <div class="experience__item">
-                <p class="experience__period">2020 - 2024</p>
-                <p class="experience__company">Microsoft</p>
-                <p class="experience__position">Web-разработчик</p>
+            <div class="education__item education__item--highlighted">
+                <p class="education__period education__period--bold">2021 - 2024</p>
+                <p class="education__degree education__degree--uppercase">Юрист</p>
+                <p class="education__university education__university--italic">Гуманитарный колледж</p>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills block">
-        <h3 class="block__title">Навыки</h3>
+    <section id="contact" class="contact block block--padded">
+        <h3 class="block__title block__title--underline">Контакты</h3>
         <div class="block__content">
-            <ul class="skills__list">
-                <li class="skills__item">Vue</li>
-                <li class="skills__item">React</li>
-                <li class="skills__item">Flutter</li>
-                <li class="skills__item">1C</li>
+            <p class="contact__info contact__info--spaced">Телефон: +79225663407</p>
+            <p class="contact__info contact__info--spaced">Email: Email@gmail.com</p>
+            <p class="contact__info contact__info--spaced">Адрес: Ингушетия, Магас</p>
+        </div>
+    </section>
+
+    <section id="experience" class="experience block block--padded">
+        <h3 class="block__title block__title--underline">Опыт работы</h3>
+        <div class="block__content">
+            <div class="experience__item experience__item--highlighted">
+                <p class="experience__period experience__period--bold">2025 - Настоящее время</p>
+                <p class="experience__company experience__company--uppercase">Яндекс</p>
+                <p class="experience__position experience__position--italic">Старший web-разработчик</p>
+            </div>
+            <div class="experience__item experience__item--highlighted">
+                <p class="experience__period experience__period--bold">2020 - 2024</p>
+                <p class="experience__company experience__company--uppercase">Microsoft</p>
+                <p class="experience__position experience__position--italic">Web-разработчик</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills block block--padded">
+        <h3 class="block__title block__title--underline">Навыки</h3>
+        <div class="block__content">
+            <ul class="skills__list skills__list--spaced">
+                <li class="skills__item skills__item--highlighted">Vue</li>
+                <li class="skills__item skills__item--highlighted">React</li>
+                <li class="skills__item skills__item--highlighted">Flutter</li>
+                <li class="skills__item skills__item--highlighted">1C</li>
             </ul>
         </div>
     </section>
 
-    <button style="border: 0; background-color: red" class="to-top" id="to-top">Наверх</button>
+    <button class="to-top to-top--red" id="to-top">Наверх</button>
 
     <script src="script.js"></script>
 </body>

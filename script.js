@@ -9,6 +9,7 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
     }
 });
 
+
 const navLinks = document.querySelectorAll('a[href^="#"]');
 navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
@@ -23,7 +24,6 @@ navLinks.forEach(link => {
         }
     });
 });
-
 
 const scrollToTopBtn = document.createElement('button');
 scrollToTopBtn.textContent = '↑ Наверх';
@@ -43,4 +43,20 @@ window.addEventListener('scroll', () => {
     } else {
         scrollToTopBtn.style.display = 'none';
     }
+});
+
+
+const fontToggle = document.createElement('button');
+fontToggle.textContent = 'Сменить шрифт';
+fontToggle.classList.add('font-toggle');
+document.querySelector('.header').appendChild(fontToggle);
+
+const fonts = ['font-arial', 'font-times', 'font-courier'];
+let currentFontIndex = 0;
+
+fontToggle.addEventListener('click', () => {
+    const body = document.body;
+    body.classList.remove(fonts[currentFontIndex]);
+    currentFontIndex = (currentFontIndex + 1) % fonts.length;
+    body.classList.add(fonts[currentFontIndex]);
 });
