@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -147,6 +154,7 @@ body {
   border-radius: 20px;
   color: #ffffff;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .font-toggle {
